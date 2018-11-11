@@ -8,19 +8,42 @@ const WhereDiv = styled.div`
     top: 300%;
 `
 
-const TitleText = styled.div`
+const Text = styled.div`
     text-align: center;
-    color:#a6a6a6
+    color:#a6a6a6;
+    font-family: 'Prompt', sans-serif;
+    font-size: 24px;
+    margin: 30px;
+    width: auto;
 `
 
+const Map = styled.div`
+        transform: translate(-50%, -50%);
+        left: 50%;
+        top: 54%;
+        position: absolute;
+        margin-top: 2%;
+`
 const Img = styled.img`
-    margin-left: 300px;
-
+        margin-top: 2%;
 `
-const Img2 = styled.img`
-    margin-bottom: 100px;
-    margin-left: 200px;
 
+const WhereBar = styled.div`
+    position: absolute;
+    width: 100%;
+    height: 8%
+    top: 396%;
+    background: #E2928D;
+`
+const Title = styled.div`
+    font-family: 'Dosis', sans-serif;
+    font-size: 64px;
+    font-weight: 900;
+    color: #4F766F;
+    left: 50%;
+    top: 7%;
+    transform: translate(-50%, 0%);
+    position: absolute;
 `
 
 const Where =()=>(
@@ -28,22 +51,14 @@ const Where =()=>(
 
         <a name="Where">
 
-        <WhereDiv className="col-sm-11 offset-sm-1">
-          <Img src='./images/where/Where.svg' whidth = '150' height = '60'/>
-        <br></br>
-        <br></br>
-        <Img src='./images/where/3.svg' whidth = '1000' height = '400'/>
-        <br></br>
-        <br></br>
-        <TitleText><h6>*** อาคารเรียนรวม 2 ***</h6></TitleText>
-
-
-
-
-
-
+        <WhereDiv>
+            <Map>
+                <Img src='./images/where/3.svg' height="450px"/>
+                <Text>ชั้น 3 อาคารเรียนรวม 2 (CB2)<br/> และตึกคณะเทคโนโลยีสารสนเทศ (SIT)</Text>
+            </Map>
+            <Title>Where</Title>
         </WhereDiv>
-
+        <WhereBar/>
         </a>
     </div>
 

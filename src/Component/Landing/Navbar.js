@@ -12,7 +12,7 @@ const Navdiv = styled.div`
 
 const Icon = styled.img`
     margin: 13%;
-    height: 70%;
+    height: 70px;
     // width: 70%;
     display: inline;
     &:hover{

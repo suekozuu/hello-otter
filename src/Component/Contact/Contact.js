@@ -39,9 +39,9 @@ const Content = styled.div`
 const Address = styled.div`
     background-color: #4F766F;
     border-radius: 15px;
-    padding-left: 30px;
-    width: 50%;
-    height: 22%;
+    padding: 10px;
+    width: auto;
+    height: auto;
     top: 80%;
     position: absolute;
     transform: translate(-50%, -50%);
@@ -49,13 +49,13 @@ const Address = styled.div`
 `
 const Span = styled.span`
     font-family: 'Dosis', sans-serif;
-    font-size: 48px;
+    font-size: 46px;
     color: #FFF;
     font-weight: 600;
 `
 const SpanContent = styled.div`
     font-family: 'Dosis', sans-serif;
-    font-size: 36px;
+    font-size: 28px;
     text-align: center;
     color: #FFF;
     font-weight: 600;
@@ -67,7 +67,7 @@ const Img = styled.img`
     padding-top: 35px;
 `
 const Div = styled.div`
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 `
 
 const Contact =()=>(
@@ -85,7 +85,7 @@ const Contact =()=>(
             <Div className="row">
             <img className="col-2 offset-sm-1" src="./images/Contact/twitter.svg"/>
             <span className="col-sm-8 offset-sm-1">
-                HelloOtter 2019
+                HelloOtter_2019
             </span>
             </Div>
             <Div className="row">
@@ -97,9 +97,9 @@ const Contact =()=>(
             </Content>
 
 
-            <Address>
-                <Span>KMUTT</Span>
-                <Img src='./images/Contact/White.svg'/>
+            <Address className="col-sm-6">
+                <Span className="col-sm-4">KMUTT</Span>
+                <Img src='./images/Contact/White.svg' className="col-sm-8"/>
                 <br/>
                 <SpanContent>
                     126 Pracha Uthid Rd, Khwaeng Bang Mod, <br/>Khet Thung Kru, Bangkok 10140

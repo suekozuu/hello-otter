@@ -1,5 +1,5 @@
-import React from 'react' ;
-import styled from 'styled-components' ;
+import React from 'react';
+import styled from 'styled-components';
 
 const WhenDiv = styled.div`
     position: absolute;
@@ -7,76 +7,86 @@ const WhenDiv = styled.div`
     height: 100%;
     top: 400%;
 `
-const TitleText = styled.div`
+const Title = styled.div`
+    font-family: 'Dosis', sans-serif;
+    font-size: 64px;
+    font-weight: 900;
+    color: #E2928D;
+    left: 50%;
+    top: 7%;
+    transform: translate(-50%, 0%);
+    position: absolute;
+`
+
+const Div = styled.div`
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+`
+
+const Img = styled.img`
+    width: 13%;
+`
+const Text = styled.div`
+    font-family: 'Prompt', sans-serif;
+    color: #E2928D;
+    font-size: 28px;
+    font-weight: 600;
+    text-align: center;
+`
+const Text2 = styled.div`
+    font-family: 'Prompt', sans-serif;
+    color: #4F766F;
+    font-size: 20px;
+    font-weight: 600;
     text-align: center;
 `
 
-const ImgTimeline = styled.img`
-    margin-left: 330px;
-
-`
-const Img = styled.img`
-    margin-left: 63px;
-
-`
-const Img2 = styled.img`
-    margin-left: 30px;
-
-`
-const Img3 = styled.img`
-    margin-left: 99px;
-
-`
-const Img4 = styled.img`
-    margin-left: 65px;
-
-`
-const Img5 = styled.img`
-    margin-left: 18px;
-
-`
-const Img6 = styled.img`
-    margin-left: 130px;
-
-`
-
-const When =()=>(
+const When = () => (
     <div>
         <a name="When">
-        <WhenDiv className="col-sm-11 offset-sm-1">
-          <ImgTimeline src='./images/when/Timeline.svg' whidth = '200' height = '55'/>
-          <br></br>
-          <br></br>
-          <br></br>
-          <br></br>
-          <br></br>
-          <br></br>
+            <WhenDiv>
+                <Div>
+                    <div className="row">
+                        <div className="col-sm-12">
+                            <div className="col-sm-11 offset-sm-1">
+                                <Img src='./images/when/T1.1.svg' className="col-sm-2" />
+                                <Img src='./images/when/line1.svg' className="col-sm-2"/>
+                                <Img src='./images/when/T2.1.svg' className="col-sm-2" />
+                                <Img src='./images/when/line1.svg' className="col-sm-2" />
+                                <Img src='./images/when/T3.1.svg' className="col-sm-2" />
+                                <Img src='./images/when/line1.svg' className="col-sm-2" />
+                                <Img src='./images/when/T4.1.svg' className="col-sm-2" />
+                            </div>
+                        </div>
+                    </div>
 
-          <Img src='./images/when/T1.1.svg' whidth = '200' height = '70'/>
-          <Img src='./images/when/line1.svg' whidth = '10' height = '8'/>
-          <Img src='./images/when/T2.1.svg' whidth = '200' height = '70'/>
-          <Img src='./images/when/line1.svg' whidth = '10' height = '8'/>
-          <Img src='./images/when/T3.1.svg' whidth = '200' height = '70'/>
-          <Img src='./images/when/line1.svg' whidth = '10' height = '8'/>
-          <Img src='./images/when/T4.1.svg' whidth = '200' height = '70'/>
-          <br></br>
+                    <div className="row">
+                        <div className="col-sm-12">
+                            <Text className="col-sm-12">
+                                <span className="col-sm-2">เปิดรับสมัคร</span>
+                                <span className="col-sm-2 offset-sm-1">ปิดรับสมัคร</span>
+                                <span className="col-sm-2 offset-sm-1">ประกาศผล</span>
+                                <span className="col-sm-2 offset-sm-1">วันกิจกรรม</span>
+                        </Text>
+                        </div>
+                    </div>
 
-          <Img2 src='./images/when/T1.2.svg' whidth = '10' height = '20'/>
-          <Img3 src='./images/when/T2.2.svg' whidth = '10' height = '20'className="col-3"/>
-          <Img2 src='./images/when/T3.2.svg' whidth = '10' height = '20'className="col-3"/>
-          <Img4 src='./images/when/T4.2.svg' whidth = '10' height = '20'className="col-2"/>
-          <br></br>
-
-          <Img5 src='./images/when/T1.3.svg' whidth = '200' height = '15'/>
-          <Img6 src='./images/when/T2.3.svg' whidth = '200' height = '20'className="col-2"/>
-          <Img6 src='./images/when/T3.3.svg' whidth = '200' height = '20'className="col-2"/>
-          <Img3 src='./images/when/T4.3.svg' whidth = '200' height = '35'className="col-2"/>
-
-
-
-
-
-        </WhenDiv>
+                    <div className="row">
+                        <div className="col-sm-12">
+                            <Text2 className="col-sm-12">
+                                <span className="col-sm-2">20 กันยายน 2562</span>
+                                <span className="col-sm-2 offset-sm-1">1 ตุลาคม 2562</span>
+                                <span className="col-sm-2 offset-sm-1">8 ตุลาคม 2562</span>
+                                <span className="col-sm-2 offset-sm-1">15 ตุลาคม 2562</span>
+                        </Text2>
+                        </div>
+                    </div>
+                </Div>
+                <Title>Timeline</Title>
+            </WhenDiv>
 
         </a>
     </div>

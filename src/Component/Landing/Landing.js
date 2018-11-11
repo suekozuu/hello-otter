@@ -20,7 +20,6 @@ const Img = styled.img`
     &:hover{
         transform: rotate(-12deg);
     }
-    
 `
 
 const DownDiv = styled.div`
@@ -40,6 +39,9 @@ const DownImg = styled.img`
 const Landing =()=>(
     <div>
     <BackgroundDiv>
+        <div>
+            <img src="./images/Landing/logo.svg" className="col-sm-3 offset-sm-9"/>
+        </div>
        <TitleDiv className="col-sm-6 offset-sm-3">
            <Img src="./images/Landing/Title.svg" className="col-sm-10 offset-sm-4"/>
        </TitleDiv>

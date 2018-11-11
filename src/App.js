@@ -1,29 +1,23 @@
 import React, { Component } from 'react';
 import './App.css';
+import styled from 'styled-components';
 
-import Navbar from './Component/Landing/Navbar';
+import Navbar from './Component/Landing/Navbar.js'
+import Landing from './Component/Landing/Landing.js';
+import What from './Component/What/What.js';
+import Who from './Component/Who/Who.js';
+import Faqs from './Component/FAQs/Faqs.js';
 
 class App extends Component {
   render() {
     return (
       <div>
-        <Navbar />
-        <div className="col-11 offset-1">
-        <h1>000000000000</h1>
-        <h1>000000000000</h1>
-        <h1>000000000000</h1>
-        <h1>000000000000</h1>
-        <h1>000000000000</h1>
-        <h1>000000000000</h1>
-        <h1>000000000000</h1>
-        <h1>000000000000</h1>
-        <h1>000000000000</h1>
-        <h1>000000000000</h1>
-        <h1>000000000000</h1>
-        <h1>000000000000</h1>
-        <h1>000000000000</h1>
-        <h1>000000000000</h1>
-        </div>
+        
+        <Landing/>
+        <What/>
+        <Who/>
+        <Faqs/>
+        <Navbar/>
       </div>
     );
   }

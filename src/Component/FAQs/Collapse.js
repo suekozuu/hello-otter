@@ -2,71 +2,91 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Div = styled.div`
-    // position: absolute;
-    // top: 20%;
+    position: absolute;
+    top: 20%;
+    font-family: 'Prompt', sans-serif;
 `
 const Question = styled.div`
     background-color: #4F766F;
-    padding: 25px;
+    border-radius: 15px;
+    padding: 20px;
 `
 
 const QuestionText = styled.button`
-        // color: #FFF;
-        font-family: Dosis;
-        // font-style: bold;
+        color: #FFF;
         background-color: transparent;
         border: none;
+        font-size: 28px;
         cursor: pointer;
+
+        &:active{
+          transform: translateY(4px);
+        }
+        &:focus{
+          outline: 0;
+        }
+`
+const Answer = styled.div`
+    background-color: #BCBEBF;
+    border-radius: 15px;
+    font-size: 26px;
+    color: #4F766F;
+`
+
+const RemoveBorder = styled.div`
+    border: transparent;
+    margin: 30px;
 `
 
 const Collapse = () => (
   <div>
     <Div class="accordion" id="accordionExample">
-      <div class="card">
+      <RemoveBorder class="card">
         <Question class="card-header" id="headingOne">
           <h5 class="mb-0">
             <QuestionText class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne">
-              เขียนโค้ดไม่เป็น ไม่มีพื้นฐานเลย ไม่เคยทำเว็บไซต์ สมัครเข้าร่วมโครงการได้ไหมคะ?
+              เขียนโค้ดไม่เป็น ไม่มีพื้นฐาน ไม่เคยทำเว็บ สมัครเข้าร่วมโครงการได้ไหม?
         </QuestionText>
           </h5>
         </Question>
 
         <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-          <div class="card-body">
-            <p>เข้าร่วมโครงการได้แน่นอน</p>
-          </div>
+          <Answer className="card-body col-sm-10 offset-sm-2">
+            <p>เพียงแค่สนใจและพร้อมเรียนรู้ก็สมัครได้</p>
+          </Answer>
         </div>
-      </div>
+      </RemoveBorder>
 
       
-      <div class="card">
-        <div class="card-header" id="headingTwo">
+      <RemoveBorder class="card">
+        <Question class="card-header" id="headingTwo">
           <h5 class="mb-0">
-            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-              Collapsible Group Item #2
-        </button>
+            <QuestionText class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              มีค่าใช้จ่ายในการสมัครและเข้าร่วมโครงการนี้ไหม?
+        </QuestionText>
           </h5>
-        </div>
+        </Question>
         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-          <div class="card-body">
-            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-      </div>
+        <Answer className="card-body col-sm-10 offset-sm-2">
+        ไม่มีค่าใช้จ่ายในการเข้าร่วมโครงการนี้
+      </Answer>
         </div>
-      </div>
-      <div class="card">
-        <div class="card-header" id="headingThree">
+      </RemoveBorder>
+
+      <RemoveBorder class="card">
+        <Question class="card-header" id="headingThree">
           <h5 class="mb-0">
-            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-              Collapsible Group Item #3
-        </button>
+            <QuestionText class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              ช่วงเวลาที่เข้าร่วมกิจกรรม เข้าตอนไหน เข้าทุกวันไหม?
+        </QuestionText>
           </h5>
-        </div>
+        </Question>
         <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-          <div class="card-body">
-            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-      </div>
+        <Answer className="card-body col-sm-10 offset-sm-2">
+          เข้ากิจกรรมทุกวันอังคาร และวันพฤหัสตอนเย็น
+      </Answer>
         </div>
-      </div>
+      </RemoveBorder>
     </Div>
   </div>
 )

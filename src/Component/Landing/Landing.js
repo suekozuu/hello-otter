@@ -46,7 +46,7 @@ const Landing =()=>(
            <Img src="./images/Landing/Title.svg" className="col-sm-10 offset-sm-4"/>
        </TitleDiv>
        <DownDiv>
-            <DownImg src="./images/Landing/down-arrow.svg" height="28px"/>
+       <a href="#What"><DownImg src="./images/Landing/down-arrow.svg" height="28px"/></a>
        </DownDiv>
     </BackgroundDiv>
     </div>

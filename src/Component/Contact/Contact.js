@@ -26,8 +26,48 @@ const Title = styled.p`
     font-size: 64px;
     font-weight: 900;
     color: #4F766F;
+    text-align: center;   
+`
+const Content = styled.div`
+    position: absolute;
+    top: 22%;
+    font-family: 'Dosis', sans-serif;
+    font-size: 50px;
+    color: #4F766F;
+    font-weight: 600;
+`
+const Address = styled.div`
+    background-color: #4F766F;
+    border-radius: 15px;
+    padding-left: 30px;
+    width: 50%;
+    height: 22%;
+    top: 80%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%
+`
+const Span = styled.span`
+    font-family: 'Dosis', sans-serif;
+    font-size: 48px;
+    color: #FFF;
+    font-weight: 600;
+`
+const SpanContent = styled.div`
+    font-family: 'Dosis', sans-serif;
+    font-size: 36px;
     text-align: center;
-    
+    color: #FFF;
+    font-weight: 600;
+`
+
+const Img = styled.img`
+    width: 85%;
+    float: right;
+    padding-top: 35px;
+`
+const Div = styled.div`
+    margin-bottom: 30px;
 `
 
 const Contact =()=>(
@@ -35,9 +75,36 @@ const Contact =()=>(
         <a name="Contact">
         <ContactDiv>
             <TitleDiv><Title>Contact</Title></TitleDiv>
-            <div className="col-sm-11 offset-sm-1">
-            Contactttt
-            </div>
+            <Content className="col-sm-4 offset-sm-4">
+            <Div className="row">
+            <img className="col-2 offset-sm-1" src="./images/Contact/facebook.svg"/>
+            <span className="col-sm-8 offset-sm-1">
+                HelloOtter 2019
+            </span>
+            </Div>
+            <Div className="row">
+            <img className="col-2 offset-sm-1" src="./images/Contact/twitter.svg"/>
+            <span className="col-sm-8 offset-sm-1">
+                HelloOtter 2019
+            </span>
+            </Div>
+            <Div className="row">
+            <img className="col-2 offset-sm-1" src="./images/Contact/instagram.svg"/>
+            <span className="col-sm-8 offset-sm-1">
+                HelloOtter 2019
+            </span>
+            </Div>
+            </Content>
+
+
+            <Address>
+                <Span>KMUTT</Span>
+                <Img src='./images/Contact/White.svg'/>
+                <br/>
+                <SpanContent>
+                    126 Pracha Uthid Rd, Khwaeng Bang Mod, <br/>Khet Thung Kru, Bangkok 10140
+                </SpanContent>
+            </Address>
         </ContactDiv>
         <StopContactBar/>
         </a>
